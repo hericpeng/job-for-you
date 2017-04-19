@@ -1,5 +1,7 @@
-class JobsController < ApplicationController
+class Admin::JobsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit, :create, :update, :destroy]
+  before_action :require_is_admin
+
 
   def index
     @jobs = Job.all
@@ -22,7 +24,7 @@ class JobsController < ApplicationController
     if @job.save
       redirect_to jobs_path
     else
-      render:new
+      render :new
     end
   end
 
