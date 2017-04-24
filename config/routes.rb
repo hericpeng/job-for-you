@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "users/registrations"}
 
   resources :jobs do
     resources :resumes
+    collection do
+      get :search
+    end
   end
+
+
+
 
   namespace :admin do
     resources :jobs do

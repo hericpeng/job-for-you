@@ -83,6 +83,11 @@ body {
     color: #212121;
 }
 
+.input-group{
+  padding-top: 8px;
+	width: 180px;
+}
+
 //---------Video-------
 
 .video-background {
@@ -104,7 +109,7 @@ body {
       background-size: cover;
       margin-bottom: 50px;
       height: 450px;
-    
+
 
     .slogan {
         color: #FAFAFA;
@@ -122,7 +127,18 @@ body {
         color: white;
     }
 }
+//---------About Us--------
+.caption {
+  margin: 30px;
+  text-align: center;
+  top: 20px;
+}
 
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin-top: 60px;
+}
 //---------Content---------
 
 .content-section-a {
@@ -165,5 +181,21 @@ body {
   p {
     color: white;
     margin-top: 30px;
+  }
+
+  .social-media{
+  	ul.list-inline{
+  		display: inline-block;
+  	}
+  	a{
+  		color: #878787;
+  	}
+  	float: right;
+  	margin-top: 12px;
+  	font-size: 20px;
+  }
+  .copyright{
+  	display: inline-block;
+  	line-height: 42px;
   }
 }
