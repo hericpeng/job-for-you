@@ -1,4 +1,4 @@
-class users::RegistrationsController < Devise::RegistrationsController
+class Users::RegistrationsController < Devise::RegistrationsController
   before_filter :configure_permitted_pa​​rameters, if: :devise_controller?
 
   protected
