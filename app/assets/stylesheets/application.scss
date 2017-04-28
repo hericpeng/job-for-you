@@ -28,6 +28,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 100px;
+
 }
 
 //---------Navbar---------
@@ -42,7 +43,6 @@ body {
 .navbar-default {
     background-color: #0F0F0F;
     border-color: #212121;
-    margin-bottom: 0;
     border-radius: 0;
 }
 
@@ -104,19 +104,21 @@ body {
 //---------Box---------
 
 .box {
-      background-image: image-url("header.jpg");
+      background-image: image-url("header1.jpg");
       background-repeat: no-repeat;
+      background-position: center;
       background-size: cover;
       margin-bottom: 50px;
       height: 450px;
       padding: 60px;
+      margin-top: -20px;
 
 
     .slogan {
         color: #FAFAFA;
         margin-top: 0px;
         margin-bottom: 50px;
-        text-align: center;
+        text-align: left;
         font-size: 25px;
         top: 12px;
         padding-top: 50px;
@@ -124,7 +126,7 @@ body {
 
     .lead {
         margin-bottom: 60px;
-        text-align: center;
+        text-align: left;
         color: white;
     }
 }
@@ -138,7 +140,8 @@ body {
 .thumbnail {
     border: 0 none;
     box-shadow: none;
-    margin-top: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 //---------Content---------
 
@@ -199,4 +202,11 @@ body {
   	display: inline-block;
   	line-height: 42px;
   }
+}
+
+//---------Common---------
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
