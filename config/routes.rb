@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   end
 
 
-
+  resources :jobs do
+    resources :reviews
+  end
 
   namespace :admin do
     resources :jobs do

@@ -5,5 +5,23 @@
 </p>
 
 <div class="text-center">
-  <%= link_to("投交履歷", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration: underline;") %>
+  <%= link_to("給予公司評論", new_job_review_path(@job), class: "btn btn-default pull-right")%>
+  <%= link_to("投交履歷", new_job_resume_path(@job), class: "btn btn-default pull-right") %>
 </div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>評論內容</th>
+      <th>發表時間</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @reviews.each do |review| %>
+    <tr>
+      <td><%= review.content %></td>
+      <td><%= review.created_at %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
