@@ -46,6 +46,18 @@ body {
     border-radius: 0;
 }
 
+.navbar-fixed-top {
+  top: 0;
+}
+
+.navbar-fixed-bottom,
+.navbar-fixed-top{
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
 
 .navbar-default .navbar-brand {
 

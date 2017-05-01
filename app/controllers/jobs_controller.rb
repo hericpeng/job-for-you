@@ -19,7 +19,7 @@ class JobsController < ApplicationController
 
   def show
     @job = Job.find(params[:id])
-    @reviews = @job.reviews.recent
+    @reviews = @job.reviews.recent.paginate( :page => params[ :page], :per_page => 5)
 
     if @job.is_hidden
       flash[:warning] = "This Job already archived"
