@@ -41,14 +41,15 @@ body {
 }
 
 .navbar-default {
-    background-color: #FAFAFA;
+    background-color: #212121;
     border-color: #212121;
     border-radius: 0;
 }
 
 
 .navbar-default .navbar-brand {
-    color: #0F0F0F;
+
+    color: #FAFAFA;
     padding: 10px 15px;
     line-height: 30px;
 }
@@ -60,12 +61,12 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #0F0F0F;
+    color: #FAFAFA;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #0F0F0F;
+    color: #FAFAFA;
     background-color: transparent;
 }
 
@@ -111,7 +112,8 @@ body {
       margin-bottom: 50px;
       height: 650px;
       padding: 60px;
-      margin-top: -20px;
+      margin-top: 0px;
+      z-index: 0;
 
 
     .slogan {
@@ -209,4 +211,9 @@ body {
 .col-centered {
   float: none;
   margin: 0 auto;
+}
+
+//---------Jobs-------
+.panel-heading{
+  margin-top: 40px;
 }

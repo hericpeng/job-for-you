@@ -19,7 +19,7 @@ class JobsController < ApplicationController
 
   def show
     @job = Job.find(params[:id])
-    @reviews = @job.reviews
+    @reviews = @job.reviews.recent
 
     if @job.is_hidden
       flash[:warning] = "This Job already archived"

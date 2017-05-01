@@ -93,3 +93,17 @@
       </div>
     </div>
   </div>
+
+  <script>
+      $(document).ready(function(){
+         $(".navbar-fixed-top").css("background-color", "transparent");
+         $(".navbar-fixed-top").css("border-color", "transparent");
+      $(window).scroll(function() {
+         if ($(document).scrollTop() > 50) {
+           $(".navbar-fixed-top").css("background-color", "#212121");
+         } else {
+           $(".navbar-fixed-top").css("background-color", "transparent");
+         }
+       });
+      });
+    </script>
